@@ -1,0 +1,87 @@
+body{
+ padding:0px;
+ margin: 0px;
+ background-color:#eee;
+}
+/* Menu */
+nav {
+    background-color: #191919;
+}
+nav a {
+    color:#ccc;
+}
+nav a:hover {
+    color:#eee;
+    text-decoration:underline!important;
+}
+/* Container de Adicionar e Filtro */
+.container-add-filters {
+    display:flex;
+    
+    width:100%;
+    margin-top: 15px;
+ 
+
+}
+.btn-container {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+/* Home */
+.container-filters {   
+
+    width:82%;
+
+}
+.form-container-home{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    float:right;
+    
+
+}
+.form-container-home input {
+    margin-right:5px;
+}
+/*  Login */
+.container-login {
+    float:right;
+    margin-right: 10px;
+    margin-left: 25px;
+
+}
+.container-login a {
+    list-style: none;
+
+}
+.title-h3 {
+    margin-top: 20px;
+    text-align: center;
+}
+.title-h4 {
+    margin-bottom:8px;
+    text-align: center;
+}
+
+
+.row-login {
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+}
+
+/* Home */
+.table-container {
+    margin-top: 10px;
+    text-align: center;
+}
+/* .hover-table:hover {
+    cursor:pointer;
+} */
+/* INFO - client */
+.form-info {
+ 
+    font-size:16px;
+}
