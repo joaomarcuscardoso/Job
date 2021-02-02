@@ -8,6 +8,7 @@
             <?php if(!empty($message)): ?>
                 <div class="alert alert-danger" role="alert"><?php echo $message; ?></div>
             <?php endif; ?>
+            
             <form method="POST" class="form-group">
                 <label for="name">Nome</label>
                 <input type="text" class="form-control" name="name" id="name"  placeholder="nome...">
