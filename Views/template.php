@@ -3,8 +3,7 @@
         <meta charset="UTF-8">
         <meta nome="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="João Marcus Cardoso">
-<!--    Icone     <link rel="icon" type="img/svg" href="<?php echo BASE_URL; ?>assets/images/logo_web_large.svg" /> 	
- -->		
+	
         <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/bootstrap.min.css" />
 		<link  rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/style.css" />
 
@@ -19,7 +18,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo BASE_URL; ?>">LadyLúDenim</a>
+            <a class="navbar-brand" href="<?php echo BASE_URL; ?>">Job</a>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">

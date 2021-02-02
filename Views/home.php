@@ -1,11 +1,11 @@
 <div class="row">
     <div class="col-sm-12">
-        <h3 class="title-h3"> Lista de troca e devoluções de Clientes</h3>
+        <h3 class="title-h3"> Lista de Programadores</h3>
         <div class="container-add-filters">
         
-            <a href="<?php echo BASE_URL; ?>home/add_client/"  class="btn btn-success btn-container" >Adicionar Programador</a>
+            <a href="<?php echo BASE_URL; ?>Home/add_prog/"  class="btn btn-success btn-container" >Adicionar Programador</a>
             <div class="container-filters">
-                <form method="POST" class="form-container-home">
+                <form method="GET" class="form-container-home">
                     
             
                     <input type="text" name="search" id="search" placeholder="nome, linguagem..." />
@@ -23,8 +23,8 @@
                     <th scope="col">Nome</th>
                     <th scope="col">E-mail</th>
                     <th scope="col">Idade</th>
-                    <th scope="col">Linkedin</th>
                     <th scope="col">Linguagens</th>
+                    <th scope="col">Linkedin</th>
                     <th scope="col">Empregado</th>
 
                     
@@ -36,9 +36,23 @@
                     <td><?php echo $progAll['name']; ?></td>
                     <td><?php echo $progAll['email']; ?></td>
                     <td><?php echo $progAll['age']; ?></td>
-                    <td><?php echo $progAll['linkedin']; ?></td>
-                    <td><?php echo $progAll['language']; ?></td>
-                    <td><?php echo $progAll['employee']; ?></td>
+                    <td><?php echo $progAll['languages']; ?></td>
+                    <td><a href="<?php echo $progAll['linkedin']; ?>">Ver</a></td>
+                    <td>
+                        <?php  if($progAll['employee'] == 0): ?>
+                            
+                            <a href="<?php echo BASE_URL; ?>Home/employee/?i=<?php echo $progAll['id']; ?>" >
+                                
+                                <img src="<?php echo BASE_URL; ?>assets/images/employee.png" alt="not employee"/> 
+                            </a>
+                        <?php else: ?>
+                            <a href="<?php echo BASE_URL; ?>Home/employee/?i=<?php echo $progAll['id']; ?>" >
+
+                                <img src="<?php echo BASE_URL; ?>assets/images/not_employee.png" alt="employee" /> 
+                            </a>
+                        <?php endif; ?>
+                
+                    </td>
                 </tr>
                 </tr>
 
